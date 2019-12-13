@@ -38,9 +38,11 @@ for (var i = 0 ; i < nameId1.length ; i++){
   var report = object[k].report;
   var section = object[k].section;
   console.log(nameId, name, grade, offenses, report, section);
+
+
   var li = document.createElement("li");
   li.innerHTML = "grade: " + grade +' / ' + "name: " + name + ' / ' + "nameId: " + nameId +' / ' + "type of offense: " + offenses + ' / ' + "report :" + report + ' / ' + "section: " + section;
-  document.body.appendChild(li);   
+  document.body.appendChild(li);
 }
 
 }
@@ -48,15 +50,8 @@ function errData(err){
   console.log("err");
   console.log(err);
 }
-var f1 = firebaseRef = firebase.database().ref().child("bullyReport");
-f1.on(`value`, function (datasnapshot){
-  head1.innerText = datasnapshot.val();
-
-});
-
 function myclick() {
     var val = text.value;
     window.alert(val);
-        
     }
 
