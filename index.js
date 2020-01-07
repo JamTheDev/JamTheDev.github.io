@@ -49,11 +49,14 @@ for (var i = 0 ; i < nameId1.length ; i++){
 
   var section = object[k].section;
 
+  var pn = object[k].pn;
+
+  var adv = object[k].adv;
   console.log(nameId, name, grade, offenses, report, section);
 
   var li = document.createElement("li");
 
-  li.innerHTML = "grade: " + grade +' / ' + "name: " + name + ' / ' + "nameId: " + nameId +' / ' + "type of offense: " + offenses + ' / ' + "report :" + report + ' / ' + "section: " + section;
+  li.innerHTML = "<b><br>grade: </b>" + grade +"<br />" + "<b>name: </b>" + name + '<br /> ' + "<b>nameId: </b>" + nameId +' <br />' + "<b>type of offense: </b>" + offenses + ' <br />' + "<b>report: </b>" + report + ' <br /> ' + "<b>section: </b>" + section + "<br /> "+ "<b>phone number: </b>" + pn + "<br />" + "<b>adviserOfSection: </b>" + adv + '<br />' + "------------------------------";
 
   li.className = "Jam";
 
