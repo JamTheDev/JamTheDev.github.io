@@ -56,7 +56,7 @@ for (var i = 0 ; i < nameId1.length ; i++){
 
   var li = document.createElement("li");
 
-  li.innerHTML = "<b><br>grade: </b>" + grade +"<br />" + "<b>name: </b>" + name + '<br /> ' + "<b>nameId: </b>" + nameId +' <br />' + "<b>type of offense: </b>" + offenses + ' <br />' + "<b>report: </b>" + report + ' <br /> ' + "<b>section: </b>" + section + "<br /> "+ "<b>phone number: </b>" + pn + "<br />" + "<b>adviserOfSection: </b>" + adv + '<br />' + "------------------------------";
+  li.innerHTML = "<br><b>Report ID: </b>" + nameId + "<br/>" + "<br><b>Name: </b>" + name + "<br/>" + "<br><b>Grade: </b>" + grade + "<br/>" + "<br><b>Section: </b>" + section + "<br/>" + "<br><b>Type of report: </b>" + offenses + "<br/>" + "<br><b>Name: </b>" + report + "<br/>" + "<br><b>Phone number: </b>" + pn + "<br/>" + "<br><b>AdviserOfSection: </b>" + adv + "<br/>" + "<br><b>---------------------------------------------------------</b>";
 
   li.className = "Jam";
 
